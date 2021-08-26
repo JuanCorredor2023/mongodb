@@ -34,3 +34,5 @@ use pokemonData
 db.pokeData.find({$or:[{name: "Snorlax"},{name: "Dratini"},{name: "Charmander"},{name: "Magikarp"},{id: "025"},{id: "035"},{id: "123"},{id: "151"}]}).pretty()
 // comando de mongo compass
 ({$or:[{name: "Snorlax"},{name: "Dratini"},{name: "Charmander"},{name: "Magikarp"},{id: "025"},{id: "035"},{id: "123"},{id: "151"}]})
+// only names
+db.pokeData.find({$or:[{name: "Snorlax"},{name: "Dratini"},{name: "Charmander"},{name: "Magikarp"},{id: "025"},{id: "035"},{id: "123"},{id: "151"}]},{name:1,_id:0}).pretty()
